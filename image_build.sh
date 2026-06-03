@@ -26,6 +26,7 @@ cd "$(dirname "$0")"
 # Pass host user UID/GID to match permissions
 docker build \
     --platform linux/arm64 \
+    --load \
     --build-arg USER_UID=$(id -u) \
     --build-arg USER_GID=$(id -g) \
     -t image_linux_arm64 .
