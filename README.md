@@ -31,9 +31,7 @@ Defines the Ubuntu 24.04 ARM64 container with:
 - **Libraries**: zlib1g-dev, libjpeg-dev, libpng-dev
 - **User Setup**: Creates `ubuntu` user with matching UID/GID to host (default password: ubuntu)
 
-### Scripts
-
-#### `image_build.sh`
+### Script `image_build.sh`
 Builds the ARM64 Docker image with platform-specific settings.
 
 **Features**:
@@ -47,7 +45,7 @@ Builds the ARM64 Docker image with platform-specific settings.
 ./image_build.sh
 ```
 
-#### `run.sh`
+### Script `run.sh`
 Launches the container as the `ubuntu` user (non-root).
 
 **Features**:
@@ -64,7 +62,7 @@ Launches the container as the `ubuntu` user (non-root).
 ./run.sh
 ```
 
-#### `run_as_root.sh`
+### Script `run_as_root.sh`
 Launches the container as root user.
 
 **Features**:
@@ -77,7 +75,7 @@ Launches the container as root user.
 ./run_as_root.sh
 ```
 
-#### `image_save_to_file.sh`
+### Script `image_save_to_file.sh`
 Exports the Docker image to a compressed tar.gz file.
 
 **Features**:
@@ -90,7 +88,7 @@ Exports the Docker image to a compressed tar.gz file.
 ./image_save_to_file.sh
 ```
 
-#### `image_load_from_file.sh`
+### Script `image_load_from_file.sh`
 Imports the Docker image from a compressed tar.gz file.
 
 **Features**:
