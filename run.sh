@@ -20,6 +20,5 @@ docker run \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v $(realpath ~/dev_arm):/home/ubuntu/dev/ \
-    --entrypoint "" \
     -u ubuntu \
-    image_linux_arm64 /bin/bash -l
+    image_linux_arm64
