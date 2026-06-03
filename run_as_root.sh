@@ -22,6 +22,14 @@ docker run \
     -u root \
     image_linux_arm64
 
-docker commit linux_arm64 image_linux_arm64
+# Ask user if they want to commit the container changes
+read -p "Do you want to commit the container changes to the image? (y/n): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "Committing container changes to image..."
+    docker commit linux_arm64 image_linux_arm64
+else
+    echo "Skipping commit."
+fi
 
 docker rm linux_arm64
