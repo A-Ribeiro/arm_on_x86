@@ -1,6 +1,6 @@
 # Docker Ubuntu 24.04 ARM64 Environment
 
-This directory contains Docker configuration and scripts for running an Ubuntu 24.04 ARM64 environment on x86 host systems using QEMU emulation.
+This repository contains Docker configuration and scripts for running an Ubuntu 24.04 ARM64 environment on x86 host systems using QEMU emulation.
 
 ## Overview
 
