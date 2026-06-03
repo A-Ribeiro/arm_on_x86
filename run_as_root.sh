@@ -13,7 +13,6 @@ docker run \
     --platform linux/arm64 \
     --add-host=host.docker.internal:host-gateway \
     -it \
-    --rm \
     -p 8080:8080 \
     --name linux_arm64 \
     --mount type=tmpfs,destination=/tmp \
@@ -22,3 +21,7 @@ docker run \
     -v $(realpath ~/dev_arm):/home/ubuntu/dev/ \
     -u root \
     image_linux_arm64
+
+docker commit linux_arm64 image_linux_arm64
+
+docker rm linux_arm64

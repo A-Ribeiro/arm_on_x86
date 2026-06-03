@@ -69,6 +69,8 @@ Launches the container as root user.
 - Same as `run.sh` but runs as root
 - Useful for system administration tasks
 - Full privileges inside the container
+- Can install packages directly into the image
+- Auto commit docker image at session end
 
 **Usage**:
 ```bash
