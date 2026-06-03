@@ -6,6 +6,12 @@ if docker ps -a | grep -q linux_arm64; then
     docker rm -f linux_arm64
 fi
 
+#if directory not exists, create it
+if [ ! -d ~/dev_arm ]; then
+    echo "Creating directory ~/dev_arm..."
+    mkdir -p ~/dev_arm
+fi
+
 # Create and run the container with X11 support
 echo "Creating container with X11 support..."
 cd "$(dirname "$0")"
