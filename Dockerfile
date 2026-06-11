@@ -17,7 +17,8 @@ RUN apt-get update \
         zenity \
         zlib1g-dev \
         libjpeg-dev \
-        libpng-dev
+        libpng-dev \
+        git wget curl ca-certificates
 
 RUN apt-get clean \
     && rm -rf /var/lib/apt/lists/*
